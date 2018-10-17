@@ -36,9 +36,14 @@ public class ReuseaxCorp {
         this.employees.add(director);
     }
 
+    // retrieving the employee based on its ID and removing it from the arraylist
+
     public void removeEmployee(String ID) {
         this.employees.remove(retrieveEmployee(ID));
     }
+
+    // retrieving  the employee based on its ID
+
 
     public Employee retrieveEmployee(String ID) {
         if (this.employees.size() > 0) {
@@ -54,6 +59,9 @@ public class ReuseaxCorp {
         return null;
     }
 
+    // searching through the arraylist and printing all of the objects stored in it
+    // and if there are non printing error message
+
     public void printAllEmployees() {
         if (this.employees.size() > 0) {
             for (int i = 0; i < this.employees.size(); i++) {
@@ -65,6 +73,8 @@ public class ReuseaxCorp {
         }
     }
 
+    //updating the name of an employee using the retrieveEmployee method
+
 
     public void updateName(String ID, String newName) {
         Employee nameEmployee = retrieveEmployee(ID);
@@ -73,6 +83,9 @@ public class ReuseaxCorp {
         }
     }
 
+    //updating the salary of an employee using the retrieveEmployee method
+
+
     public void updateSalary(String ID, double newSalary) {
         Employee salaryEmployee = retrieveEmployee(ID);
         if (salaryEmployee != null) {
@@ -80,6 +93,8 @@ public class ReuseaxCorp {
             salaryEmployee.setNetSalary();
         }
     }
+
+    //searching through the arraylist and adding all of the gross salaries together
 
 
     public double calcGrossSalaries() {
@@ -94,6 +109,9 @@ public class ReuseaxCorp {
         return totalGrossSalaries;
     }
 
+    //searching through the arraylist and adding all of the net salaries together
+
+
     public double calcNetSalaries() {
         double totalNetSalaries = 0;
         if (!this.employees.isEmpty()) {
@@ -106,12 +124,31 @@ public class ReuseaxCorp {
     }
 
 
+    //searching through the arraylist and adding all of the objects together
+
     public int totalNumOfEmployees() {
         return this.employees.size();
     }
 
+    // ARGUMENTATION FOR UPCAST/DOWNCAST
+    // The way we decided to do this was based on what we could come up with whilst trying to solve the problem
+    // but there are problems with this way besides it being "ugly".
+    //
+    // First of all there are redundant code which could with more knowledge probably be reduced and made better.
+    //
+    // Secondly we save the desired information (or kind of copy) onto a new object which we add to the array
+    // and then remove the retrieved "person" instead of just updating the retrieved "person" to the desired position.
+    // Logically this would be done in a different way and this shows the struggle of inheritance.
+    //
+    // Thirdly these kind of methods are risky in the sense that it's easy to lose valuable information and
+    // variables.
+
     public Intern promoteToIntern(String ID, int gpa) {
         Employee myNewEmployee = retrieveEmployee(ID);
+
+        //promoting any employee using the retrieveEmployee method then casting the values to an intern
+        // and creating a new intern with those values of the employee retrieved and deleting the old employee
+        // and then creating a new object (intern)
 
         if (myNewEmployee != null) {
             Intern ne = new Intern(myNewEmployee.getName(), myNewEmployee.getID(), myNewEmployee.grossSalary, gpa);
@@ -119,13 +156,18 @@ public class ReuseaxCorp {
             this.employees.add(ne);
             return ne;
         } else {
-            System.out.println("nulle");
             return null;
         }
     }
 
+
+
     public Employee promoteToEmployee(String ID) {
         Employee myNewEmployee = retrieveEmployee(ID);
+
+        //promoting any employee using the retrieveEmployee method then casting the values to an employee
+        // and creating a new employee with those values of the employee retrieved and deleting the old employee
+        // and then creating a new object (employee)
 
         if (myNewEmployee != null) {
             Employee ne = new Employee(myNewEmployee.getName(), myNewEmployee.getID(), myNewEmployee.grossSalary);
@@ -133,7 +175,6 @@ public class ReuseaxCorp {
             this.employees.add(ne);
             return ne;
         } else {
-            System.out.println("nulle");
             return null;
         }
     }
@@ -142,19 +183,25 @@ public class ReuseaxCorp {
     public Manager promoteToManager(String ID, String degree) {
         Employee myNewEmployee = retrieveEmployee(ID);
 
+        //promoting any employee using the retrieveEmployee method then casting the values to an manager
+        // and creating a new manager with those values of the employee retrieved and deleting the old employee
+        // and then creating a new object (manager)
+
         if (myNewEmployee != null) {
+
+
             if (myNewEmployee instanceof Intern) {
-                Intern newIntern = (Intern) myNewEmployee;
-                Manager newEmployee = new Manager(newIntern.getName(), newIntern.getID(), newIntern.grossSalary, degree);
-                this.employees.remove(newIntern);
+                Intern intern = (Intern) myNewEmployee;
+                Manager newEmployee = new Manager(intern.getName(), intern.getID(), intern.grossSalary, degree);
+                this.employees.remove(intern);
                 this.employees.add(newEmployee);
                 newEmployee.setNetSalary();
                 return newEmployee;
             }
             if (myNewEmployee instanceof Director) {
-                Manager newEmp = new Manager(myNewEmployee.getName(), myNewEmployee.getID(), myNewEmployee.grossSalary, degree);
+                Manager newEmployee = new Manager(myNewEmployee.getName(), myNewEmployee.getID(), myNewEmployee.grossSalary, degree);
                 employees.remove(myNewEmployee);
-                employees.add(newEmp);
+                employees.add(newEmployee);
                 return null;
             }
             if (!(myNewEmployee instanceof Manager)) {
@@ -174,19 +221,27 @@ public class ReuseaxCorp {
 
     public Director promoteToDirector(String ID, String degree, String department) {
         Employee myNewEmployee = retrieveEmployee(ID);
+
+        //promoting any employee using the retrieveEmployee method then casting the values to an director
+        // and creating a new director with those values of the employee retrieved and deleting the old employee
+        // and then creating a new object (director)
+
         if (myNewEmployee != null) {
             if (myNewEmployee instanceof Intern) {
-                Intern newIntern = (Intern) myNewEmployee;
-                Director newEmployee = new Director(newIntern.getName(), newIntern.getID(), newIntern.grossSalary, degree, department);
-                this.employees.remove(newIntern);
+                Intern intern = (Intern) myNewEmployee;
+                Director newEmployee = new Director(intern.getName(), intern.getID(), intern.grossSalary, degree, department);
+                this.employees.remove(intern);
                 this.employees.add(newEmployee);
                 newEmployee.setNetSalary();
                 return newEmployee;
             }
+            // since we want the director to keep its degree if the employee that we retrieve is a manager
+            // we need a separate "if statement" for this
             if (myNewEmployee instanceof Manager) {
-                Manager newIntern = (Manager) myNewEmployee;
-                Director newEmployee = new Director(newIntern.getName(), newIntern.getID(), newIntern.grossSalary, newIntern.getDegree(), department);
-                this.employees.remove(newIntern);
+                Manager director = (Manager) myNewEmployee;
+                //constructor for creating a director
+                Director newEmployee = new Director(director.getName(), director.getID(), director.grossSalary, director.getDegree(), department);
+                this.employees.remove(director);
                 this.employees.add(newEmployee);
                 newEmployee.setNetSalary();
                 return newEmployee;
@@ -202,6 +257,8 @@ public class ReuseaxCorp {
             return null;
         }
     }
+
+    // method to set the directors benefit for all directors no matter which department they are in charge of
 
     public double setDirectorBenefit(double newDirectorBenefit) {
         Director.benefit = newDirectorBenefit;

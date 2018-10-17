@@ -6,6 +6,7 @@ public class Employee {
     private final String ID;
     public double grossSalary;
     public double netSalary;
+    private final double TEN_PERCENT_TAX = 0.9;
 
     public String getName() {
         return name;
@@ -29,25 +30,26 @@ public class Employee {
     }
 
     public void setNetSalary() {
-        netSalary = grossSalary * 0.9;
+        netSalary = grossSalary * TEN_PERCENT_TAX;
     }
 
     public double getNetSalary() {
-        return this.getGrossSalary() * 0.9;
+        return this.getGrossSalary() * TEN_PERCENT_TAX;
     }
 
 
-    //HAS TO BE RETRIEVED
+    // constructor of the super class
 
     public Employee(String name, String ID, double grossSalary) {
-
         this.name = name;
         this.ID = ID;
         this.grossSalary = grossSalary;
 
     }
 
-    public void printEmployee(){
+    // " interesting " information about this object and its variables
+
+    public void printEmployee() {
         System.out.println("ID: " + this.getID());
         System.out.println("Name: " + this.getName());
         System.out.println("Gross salary: " + this.grossSalary);
