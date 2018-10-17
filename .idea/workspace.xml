@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb1d5f78-6c8f-4ecb-8f1d-8d85ac2d8805" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assignment3/company/ReuseaxCorp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assignment3/employees/Intern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment3/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/employees/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment3/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/employees/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment3/Intern.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment3/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/Main/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment3/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assignment3/ReusaxCorp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/Main/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/Main/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignment3/company/ReuseaxCorp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assignment3/company/ReuseaxCorp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,6 +44,34 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="-2087360354">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="241" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="241" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -58,20 +80,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="30" selection-start-column="30" selection-end-column="30" />
-              <folding>
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -81,10 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="30" selection-start-column="30" selection-end-column="30" />
-              <folding>
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -94,10 +98,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#999#1000#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -107,26 +107,31 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="30" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assignment3/company/ReuseaxCorp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
               <folding>
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1646#1647#0" expanded="true" />
+                <element signature="e#1705#1706#0" expanded="true" />
+                <element signature="e#4303#4304#0" expanded="true" />
+                <element signature="e#4347#4348#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/assignment3/company/ReuseaxCorp.java">
+        <entry file="file://$PROJECT_DIR$/src/assignment3/Main/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3045">
-              <caret line="209" column="1" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -152,12 +157,13 @@
         <option value="$PROJECT_DIR$/src/assignment3/ReusaxCorp.java" />
         <option value="$PROJECT_DIR$/src/assignment3/MainClass.java" />
         <option value="$PROJECT_DIR$/src/assignment3/company/ReusaxCorp.java" />
-        <option value="$PROJECT_DIR$/src/assignment3/Main/MainClass.java" />
         <option value="$PROJECT_DIR$/src/assignment3/employees/Intern.java" />
         <option value="$PROJECT_DIR$/src/assignment3/employees/Director.java" />
         <option value="$PROJECT_DIR$/src/assignment3/employees/Employee.java" />
         <option value="$PROJECT_DIR$/src/assignment3/employees/Manager.java" />
         <option value="$PROJECT_DIR$/src/assignment3/company/ResuseaxCorp.java" />
+        <option value="$PROJECT_DIR$/src/assignment3/company/ReuseaxCorp.java" />
+        <option value="$PROJECT_DIR$/src/assignment3/Main/MainClass.java" />
       </list>
     </option>
   </component>
@@ -179,34 +185,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Assignment3new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment3new" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment3WithoutPrintsAndScanners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment3WithoutPrintsAndScanners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment3new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment3new" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment3WithoutPrintsAndScanners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment3WithoutPrintsAndScanners" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Assignment3new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment3new" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment3WithoutPrintsAndScanners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment3WithoutPrintsAndScanners" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment3WithoutPrintsAndScanners" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment3WithoutPrintsAndScanners" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539346993988" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539783014877" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -252,8 +265,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="319" y="69" width="1261" height="782" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34126332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34700575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -262,7 +276,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289855" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289855" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -285,41 +299,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assignment3/company/ReusaxCorp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="210" column="1" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assignment3/Main/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assignment3/company/ReusaxCorp.java" />
     <entry file="file://$PROJECT_DIR$/src/assignment3/employees/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="30" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -327,10 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="30" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -338,10 +318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -349,24 +325,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="30" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assignment3/company/ReuseaxCorp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3045">
-          <caret line="209" column="1" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
+        <state relative-caret-position="1185">
+          <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1705#1706#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4347#4348#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assignment3/Main/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>

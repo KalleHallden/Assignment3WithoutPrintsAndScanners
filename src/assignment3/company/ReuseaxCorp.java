@@ -17,23 +17,40 @@ public class ReuseaxCorp {
         this.employees = new ArrayList<>();
     }
 
+    public boolean employeeExists(String ID) {
+        if (retrieveEmployee(ID) == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
 
     public void registerEmployee(String name, String ID, double salary) {
-        Employee employee = new Employee(name, ID, salary);
-        this.employees.add(employee);
+        if (!employeeExists(ID)) {
+            Employee employee = new Employee(name, ID, salary);
+            this.employees.add(employee);
+        }
     }
     public void registerIntern(String name, String ID, double salary, int gpa) {
-        Intern intern = new Intern(name, ID, salary, gpa);
-        this.employees.add(intern);
+       if (!employeeExists(ID)) {
+           Intern intern = new Intern(name, ID, salary, gpa);
+           this.employees.add(intern);
+       }
     }
 
     public void registerManager(String name, String ID, double salary, String degree) {
-        Manager manager = new Manager(name, ID, salary, degree);
-        this.employees.add(manager);
+        if (!employeeExists(ID)) {
+            Manager manager = new Manager(name, ID, salary, degree);
+            this.employees.add(manager);
+        }
     }
     public void registerDirector(String name, String ID, double salary, String degree, String department) {
-        Director director = new Director(name, ID, salary, degree, department);
-        this.employees.add(director);
+        if(!employeeExists(ID)) {
+            Director director = new Director(name, ID, salary, degree, department);
+            this.employees.add(director);
+        }
     }
 
     // retrieving the employee based on its ID and removing it from the arraylist
@@ -66,10 +83,7 @@ public class ReuseaxCorp {
         if (this.employees.size() > 0) {
             for (int i = 0; i < this.employees.size(); i++) {
                 this.employees.get(i).printEmployee();
-                System.out.println("======================================");
             }
-        } else {
-            System.out.println("No employees registered yet");
         }
     }
 
